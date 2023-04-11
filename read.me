@@ -1,0 +1,12 @@
+The first rule of writing custom rules is to never modify the existing rule files in the /var/ossec/rules directory except local_rules.xml. 
+Changes to those rules may modify the behavior of entire chains of rules and complicate troubleshooting.
+
+The second rule of writing custom rules is to use IDs above 100000 as IDs below it are reserved. 
+Interfering with those IDs is the same as tampering with the distributed rules files themselves. 
+You risk an update of OSSEC clobbering all your hard work.
+
+The third rule is to maintain order in your rules. As the rules parser is loading the rules at startup, it validates the existence of referenced rules and groups. If you reference a rule that hasn't been loaded, the parser will fail.
+
+
+
+Restart the service after making changes to the OSSEC rules. For the changes to take effect. Command:/var/ossec/bin/ossec-control restart
