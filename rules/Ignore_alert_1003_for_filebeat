@@ -1,0 +1,9 @@
+ 
+ //Ignoring events from the program "Filebeat" on event Level:13 - Non standard syslog message (size too large).Rule Id:1003
+ 
+ <rule id="100002" level="0">
+    <if_sid>1003</if_sid>
+    <program_name>filebeat</program_name>                     
+    <description>Ignore alert 1003 for filebeat</description>
+  </rule>
+  
