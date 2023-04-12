@@ -3,4 +3,4 @@
 
 <frequency>120</frequency>
 
-///var/ossec/bin/ossec-control restart
+//Restart service:/var/ossec/bin/ossec-control restart
