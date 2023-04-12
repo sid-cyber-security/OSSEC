@@ -1,0 +1,2 @@
+//The default value is 72000 seconds (22 hours). I think it's too long to respond to the incident. Vaporized for 120 seconds
+<frequency>120</frequency>
