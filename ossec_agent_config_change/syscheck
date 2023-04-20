@@ -4,6 +4,8 @@
 
 <frequency>120</frequency>
 
+ <auto_ignore>no</auto_ignore> //After 3 changes to a file, further changes to a file will be ignored. Setting auto_ignore to "no" will disable this.
+
 <ignore>/var/ossec/logs/ossec.log</ignore> //The log is constantly updated. Therefore, the checksum changes. Lots of processing events.
 
 
