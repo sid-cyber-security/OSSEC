@@ -5,6 +5,7 @@
 <frequency>120</frequency>
 
  <auto_ignore>no</auto_ignore> //After 3 changes to a file, further changes to a file will be ignored. Setting auto_ignore to "no" will disable this.
+ <directories check_all="yes" report_changes="yes">/opt/your_important_file</directories> //So we add the necessary file to check for changes in the hash sum. Don't forget to add the rule to local_rules on the OSSEC server
 
 <ignore>/var/ossec/logs/ossec.log</ignore> //The log is constantly updated. Therefore, the checksum changes. Lots of processing events.
 
