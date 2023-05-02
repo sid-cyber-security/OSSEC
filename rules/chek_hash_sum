@@ -1,0 +1,7 @@
+//If you only add a path where to check the hash amount, then notifications will not come. You also need to add a rule to local_rules. An example is below.
+
+<rule id="100003" level="7">
+    <if_sid>550</if_sid>
+    <regex>^opt/your_important_file</regex>
+    <description>File modified (hash changed) your_important_file</description>
+  </rule>
