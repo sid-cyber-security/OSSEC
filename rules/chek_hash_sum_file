@@ -2,6 +2,6 @@
 
 <rule id="100003" level="7">
     <if_sid>550</if_sid>
-    <regex>^opt/your_important_file</regex>
+    <regex>^opt/your_important_file</regex>   //path to your file
     <description>File modified (hash changed) your_important_file</description>
   </rule>
